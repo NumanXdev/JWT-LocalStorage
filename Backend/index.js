@@ -19,7 +19,7 @@ const MONGO_URL = process.env.MONGO_URL;
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://jwt-local-storage.vercel.app",
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
